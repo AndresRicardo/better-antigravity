@@ -20,11 +20,12 @@ Get-ChildItem -Path $PluginsDir -Directory | ForEach-Object {
 
     Write-Host "  -> Installing [$pluginName]..." -NoNewline
 
-    # Copy files
-    if (Test-Path $destPath) {
-        Remove-Item -Path $destPath -Recurse -Force -ErrorAction SilentlyContinue
+    if (-not (Test-Path $destPath)) {
+        New-Item -ItemType Directory -Path $destPath -Force | Out-Null
     }
-    Copy-Item -Path $sourcePath -Destination $destPath -Recurse -Force
+    
+    # Copy all items from source plugin directory directly into destination plugin directory
+    Copy-Item -Path (Join-Path $sourcePath "*") -Destination $destPath -Recurse -Force
     Write-Host " [OK]" -ForegroundColor Green
 }
 

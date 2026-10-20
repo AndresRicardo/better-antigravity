@@ -15,8 +15,8 @@ for plugin_path in "$PLUGINS_DIR"/*; do
     plugin_name=$(basename "$plugin_path")
     dest_path="$TARGET_DIR/$plugin_name"
     echo -n "  -> Installing [$plugin_name]... "
-    rm -rf "$dest_path"
-    cp -R "$plugin_path" "$dest_path"
+    mkdir -p "$dest_path"
+    cp -R "$plugin_path"/* "$dest_path"/
     echo "[OK]"
   fi
 done
