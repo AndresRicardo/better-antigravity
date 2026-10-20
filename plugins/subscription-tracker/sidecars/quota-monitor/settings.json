@@ -1,0 +1,16 @@
+{
+  "billingRenewalDay": 16,
+  "refreshIntervalMs": 60000,
+  "fixedModelOrder": [
+    "gemini-3.8-flash",
+    "gemini-4-argon",
+    "claude-sonnet-5.5",
+    "claude-opus-5.5",
+    "gpt-oss-120b"
+  ],
+  "tierOrder": [
+    "high",
+    "medium",
+    "low"
+  ]
+}

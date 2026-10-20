@@ -1,0 +1,19 @@
+{
+  "name": "subscription-tracker",
+  "version": "1.0.0",
+  "description": "Monitor de cuotas y uso de suscripción por modelo para Antigravity",
+  "type": "module",
+  "main": "sidecars/quota-monitor/server.mjs",
+  "scripts": {
+    "start": "node sidecars/quota-monitor/server.mjs"
+  },
+  "keywords": [
+    "antigravity",
+    "plugin",
+    "quota",
+    "subscription",
+    "tracker"
+  ],
+  "author": "Andres Ricardo Muñoz",
+  "license": "MIT"
+}

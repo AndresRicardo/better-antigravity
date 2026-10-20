@@ -1,0 +1,16 @@
+{
+  "name": "subscription-tracker",
+  "displayName": "Monitor de Suscripción",
+  "version": "1.0.0",
+  "description": "Monitorea el uso de cuotas de tu suscripción con barra de progreso y tiempo de reseteo para ventanas de 5h, semanal y mensual.",
+  "author": {
+    "name": "Antigravity Dev"
+  },
+  "keywords": [
+    "quota",
+    "subscription",
+    "usage",
+    "tracker",
+    "status"
+  ]
+}

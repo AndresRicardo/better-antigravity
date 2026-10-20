@@ -1,0 +1,24 @@
+{
+  "name": "better-antigravity",
+  "version": "1.0.0",
+  "description": "Monorepo de plugins y utilidades avanzadas para Google Antigravity",
+  "author": "Andres Ricardo Muñoz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndresRicardo/better-antigravity.git"
+  },
+  "scripts": {
+    "install:plugins": "powershell -ExecutionPolicy Bypass -File ./scripts/install-plugins.ps1",
+    "install:plugins:sh": "bash ./scripts/install-plugins.sh"
+  },
+  "keywords": [
+    "antigravity",
+    "plugins",
+    "google-antigravity",
+    "sidecar",
+    "skills",
+    "quota-tracker",
+    "ai-developer"
+  ]
+}
